@@ -23,7 +23,8 @@ Usage
 
 ::
 
-    from magic_select import import_from_string
+    from magic_import import import_from_string
+    
     listdir = import_from_string("os.listdir")
     files = listdir(".")
 
