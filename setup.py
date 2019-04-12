@@ -19,7 +19,7 @@ if os.sys.version.startswith("2.6"):
 
 setup(
     name="magic-import",
-    version="0.1.2",
+    version="0.1.3",
     description="Import python object from string and return the reference of the object.",
     long_description=long_description,
     url="https://github.com/appstore-zencore/magic-import",
@@ -37,5 +37,6 @@ setup(
     keywords=['magic-import'],
     requires=requires,
     install_requires=requires,
-    packages=find_packages("."),
+    packages=find_packages(".", exclude=["tests"]),
+    py_modules=["magic_import"],
 )

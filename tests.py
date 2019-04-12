@@ -85,3 +85,6 @@ class TestMagicImport(unittest.TestCase):
         t12 = [1,2]
         none = import_from_string("t12.2")
         assert none is None
+
+if __name__ == "__main__":
+    unittest.main()
